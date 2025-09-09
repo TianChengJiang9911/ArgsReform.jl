@@ -36,7 +36,7 @@ let nt_1 = (a=1, b=2, c=3), nt_2 = (a=1, b=2, c=3)
 end
 ```
 
-Over writing
+Overwriting
 ```julia
 let nt_1 = (a=1, b=2, c=3), nt_2 = (b=4, c=5, d=6)
     @reform b, c, nt_3... = nt_1..., nt_2... # b == 4, c == 5, nt_3 == (a=1, d=6) 
